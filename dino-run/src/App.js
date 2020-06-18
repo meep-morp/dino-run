@@ -18,16 +18,9 @@ function App() {
   useEffect(() => {
     console.log("count")
     window.setInterval(() => {
-      isAlive ? setScore(score => score + 10) : setScore(0);
+      setScore(score => score + 10);
     }, 300)
   }, []);
-
-  useEffect(() => {
-    if (window.location.pathname == "/start") {
-      console.log("Start")
-      setIsAlive(true);
-    }
-  }, [])
 
   // useEffect(() => {
   //   console.log(player)
@@ -47,7 +40,13 @@ function App() {
       <Route path="/" exact>
         <div className="home">
           <h1>DINO RUN</h1>
-          <Link className="button" to="/start">Start Game</Link>
+          <button 
+          onClick={() => {
+            window.location.assign("/start");
+            setScore(0);
+          }} 
+          className="button" 
+          >Start Game</button>
         </div>
       </Route>
       <Route path="/start">
