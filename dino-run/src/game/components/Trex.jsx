@@ -30,9 +30,7 @@ let Trex = props => {
 
 
     return (
-        <div>
             <img className={jump ? "trex jump" : "trex"} src={trex} />
-        </div>
     )
 }
 

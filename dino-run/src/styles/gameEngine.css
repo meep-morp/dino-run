@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background-image: url(../assets/TrexRunBackground-export.png);
     background-size: cover;
@@ -10,6 +13,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes scroll {
@@ -21,6 +25,7 @@ body {
     position: absolute;
     bottom: 0;
     outline: none;
+    border: white 1px solid;
 }
 
 .obstacle {
@@ -33,6 +38,7 @@ body {
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     animation-timing-function: ease-out;
+    border: white 1px solid;
 }
 
 @keyframes slide {
@@ -49,8 +55,16 @@ body {
 
 @keyframes jump {
     0% {transform: translateY(0px);}
-    25% {transform: translateY(-150px);}
-    50% {transform: translateY(-250px);}
-    75% {transform: translateY(-50px);}
+    25% {transform: translateY(-200px);}
+    50% {transform: translateY(-300px);}
+    55% {transform: translateY(-300px);}
+    75% {transform: translateY(-150px);}
     100% {transform: translateY(0px);}
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 2rem;;
 }
