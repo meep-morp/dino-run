@@ -25,7 +25,7 @@ body {
     position: absolute;
     bottom: 0;
     outline: none;
-    border: white 1px solid;
+    /* border: white 1px solid; */
 }
 
 .obstacle {
@@ -38,7 +38,7 @@ body {
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     animation-timing-function: ease-out;
-    border: white 1px solid;
+    /* border: white 1px solid; */
 }
 
 @keyframes slide {
@@ -91,4 +91,5 @@ h1 {
     padding: 10px;
     border: white solid 3px;
     font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
 }

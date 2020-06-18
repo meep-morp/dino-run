@@ -23,17 +23,8 @@ function App() {
   }, []);
 
   // useEffect(() => {
-  //   console.log(player)
-  //   console.log(entity)
-  // }, [tick])
-
-  // useEffect(() => {
   //   isColliding(player, entity) ? setIsAlive(false) : setIsAlive(true);
   // }, [score])
-
-  // setInterval(() => {
-  //   setTick(tick + 1)
-  // }, 1000)
 
   return (
     <Router>
