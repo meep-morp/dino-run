@@ -1,0 +1,56 @@
+body {
+    background-image: url(../assets/TrexRunBackground-export.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    from {background-position: left;}
+    to {background-position: right;}
+}
+
+.trex {
+    position: absolute;
+    bottom: 0;
+    outline: none;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide {
+    from {transform: translateX(100vw);}
+    to {transform: translateX(-110vw);}
+}
+
+.jump {
+    animation-name: jump;
+    animation-duration: 0.5s;
+    /* animation-timing-function: ease-in; */
+    animation-iteration-count: 1;
+}
+
+@keyframes jump {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(-150px);}
+    50% {transform: translateY(-250px);}
+    75% {transform: translateY(-50px);}
+    100% {transform: translateY(0px);}
+}
